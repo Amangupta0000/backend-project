@@ -76,7 +76,7 @@ userSchema.methods.generateAccessToken = function () {
         }
     )
 }
-userSchema.methods.generaterRefeshToken = function () {
+userSchema.methods.generaterRefreshToken = function () {
     return jwt.sign(
         {
             id: this.id,
